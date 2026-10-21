@@ -5,7 +5,7 @@ provider "google" {
 }
 
 resource "google_compute_instance" "free_vm" {
-  name         = "free-tier-vm"
+  name         = "free-tier-vm-pb"
   machine_type = "e2-micro"
   
   boot_disk {
