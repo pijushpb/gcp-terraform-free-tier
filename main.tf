@@ -30,6 +30,6 @@ module "bucket" {
   location   = "us-east1"
   iam_members = [{
     role   = "roles/storage.objectViewer"
-    member = "terraform-sa@project-2dadfd71-b08e-4164-b79.iam.gserviceaccount.com"
+    member = "pijush.goachala@gmail.com"
   }]
 }
