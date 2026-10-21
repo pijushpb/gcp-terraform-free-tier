@@ -25,8 +25,8 @@ module "bucket" {
   source  = "terraform-google-modules/cloud-storage/google//modules/simple_bucket"
   version = "~> 12.4"
 
-  name       = "example-bucket"
-  project_id = "example-project"
+  name       = "pijush-bucket"
+  project_id = "project-2dadfd71-b08e-4164-b79"
   location   = "us-east1"
   iam_members = [{
     role   = "roles/storage.objectViewer"
