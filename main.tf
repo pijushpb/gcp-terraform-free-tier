@@ -26,7 +26,7 @@ module "bucket" {
   version = "~> 12.4"
 
   name       = "example-bucket"
-  project_id = "example-project"
+  project_id = "project-2dadfd71-b08e-4164-b79"
   location   = "us-east1"
   iam_members = [{
     role   = "roles/storage.objectViewer"
