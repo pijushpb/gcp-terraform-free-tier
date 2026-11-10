@@ -3,7 +3,6 @@ provider "google" {
   region  = var.region
   zone    = var.zone
 }
-
 resource "google_compute_instance" "free_vm" {
   name         = "free-tier-vm"
   machine_type = "e2-micro"
