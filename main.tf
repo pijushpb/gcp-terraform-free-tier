@@ -24,7 +24,7 @@ module "bucket" {
   source  = "terraform-google-modules/cloud-storage/google//modules/simple_bucket"
   version = "~> 12.4"
 
-  name       = "example-bucket"
+  name       = "example12-bucket"
   project_id = "project-2dadfd71-b08e-4164-b79"
   location   = "us-east1"
   iam_members = [{
@@ -32,5 +32,5 @@ module "bucket" {
     member = "serviceAccount:terraform-sa@project-2dadfd71-b08e-4164-b79.iam.gserviceaccount.com"
   }]
 }
-
+  
 
