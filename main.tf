@@ -25,11 +25,11 @@ module "bucket" {
   source  = "terraform-google-modules/cloud-storage/google//modules/simple_bucket"
   version = "~> 12.4"
 
-  name       = "example-bucket"
+  name       = "pijus-bucket_gen09"
   project_id = "project-2dadfd71-b08e-4164-b79"
   location   = "us-east1"
   iam_members = [{
     role   = "roles/storage.objectViewer"
-    member = "terraform-sa@project-2dadfd71-b08e-4164-b79.iam.gserviceaccount.com"
+    member = "serviceAccount:terraform-sa@project-2dadfd71-b08e-4164-b79.iam.gserviceaccount.com"
   }]
 }
