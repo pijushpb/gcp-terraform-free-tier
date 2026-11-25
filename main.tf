@@ -32,4 +32,5 @@ module "bucket" {
     role   = "roles/storage.objectViewer"
     member = "terraform-sa@project-2dadfd71-b08e-4164-b79.iam.gserviceaccount.com"
   }]
-}
+}   
+
