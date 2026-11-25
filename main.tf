@@ -4,7 +4,7 @@ provider "google" {
   zone    = var.zone
 }
 resource "google_compute_instance" "free_vm" {
-  name         = "free-tier-vm"
+  name         = "free1-tier-vm"
   machine_type = "e2-micro"
 
   boot_disk {
@@ -24,7 +24,7 @@ module "bucket" {
   source  = "terraform-google-modules/cloud-storage/google//modules/simple_bucket"
   version = "~> 12.4"
 
-  name       = "example12-bucket"
+  name       = "pijush-bucket_gen09"
   project_id = "project-2dadfd71-b08e-4164-b79"
   location   = "us-east1"
   iam_members = [{
@@ -32,5 +32,3 @@ module "bucket" {
     member = "serviceAccount:terraform-sa@project-2dadfd71-b08e-4164-b79.iam.gserviceaccount.com"
   }]
 }
-  
-
