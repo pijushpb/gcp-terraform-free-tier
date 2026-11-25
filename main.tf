@@ -3,7 +3,6 @@ provider "google" {
   region  = var.region
   zone    = var.zone
 }
-
 resource "google_compute_instance" "free_vm" {
   name         = "free-tier-vm"
   machine_type = "e2-micro"
@@ -32,12 +31,6 @@ module "bucket" {
     role   = "roles/storage.objectViewer"
     member = "terraform-sa@project-2dadfd71-b08e-4164-b79.iam.gserviceaccount.com"
   }]
-} 
-
-
-
-
-
-
-
+}
+  
 
