@@ -20,23 +20,6 @@ resource "google_compute_instance" "free_vm" {
     access_config {} # ephemeral public IP
   }
 }
-resource "google_compute_instance" "free_vm2" {
-  name         = "free-tier-vm2"
-  machine_type = "e2-micro"
-
-  boot_disk {
-    initialize_params {
-      image = "debian-cloud/debian-12"
-      size  = 30
-      type  = "pd-standard"
-    }
-  }
-
-  network_interface {
-    network = "default"
-    access_config {} # ephemeral public IP
-  }
-}
 module "bucket" {
   source  = "terraform-google-modules/cloud-storage/google//modules/simple_bucket"
   version = "~> 12.4"
