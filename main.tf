@@ -20,7 +20,7 @@ resource "google_compute_instance" "free_vm" {
     access_config {} # ephemeral public IP
   }
 }
-resource "google_compute_instance" "free_vm" {
+resource "google_compute_instance" "free_vm2" {
   name         = "free-tier-vm2"
   machine_type = "e2-micro"
 
